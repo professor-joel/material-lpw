@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    /* continue com a formatação */
+}
+h1 {
+    /* continue com a formatação */
+}
+
+.exemplo, .link, .lista-tarefas li {
+    transition: background-color 0.3s;
+    /* continue com a formatação */
+}
+
+.exemplo {
+    /* continue com a formatação */
+}
+
+.exemplo:hover {
+    /* continue com a formatação */
+}
+
+.link {
+    /* continue com a formatação */
+}
+
+.link:hover {
+    /* continue com a formatação */
+}
+
+.link:active {
+    /* continue com a formatação */
+}
+
+.lista-tarefas {
+    display: inline-block;
+    /* continue com a formatação */
+}
+
+.lista-tarefas li {
+    /* continue com a formatação */
+}
+
+.lista-tarefas li:hover {
+    /* continue com a formatação */
+}
+
+.sombra {
+    /* continue com a formatação */
+}
+
+p {
+    line-height: 1.5;
+    /* continue com a formatação */
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    /* defina a margin para a galeria */
+}
+.galeria img {
+    transition: transform 0.3s;
+    /* continue com a formatação */
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
