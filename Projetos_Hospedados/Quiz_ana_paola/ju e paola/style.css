@@ -1,0 +1,157 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* A imagem vai cobrir toda a tela */
+    background-position: center; /* A imagem será centralizada */
+    background-attachment: fixed; /* A imagem de fundo ficará fixa quando o usuário rolar a página */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(244, 251, 255); /* Para garantir que o texto seja legível sobre a imagem */
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(89, 117, 240, 0.562); /* Cor de fundo semi-transparente para o container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Animação de fade-in para o container */
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out; /* Animação para a logo */
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #e4e9f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Slogan */
+.slogan {
+    font-size: 20px;
+    font-style: italic;
+    color: #F1C40F;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Botão */
+.button {
+    background-color: #7282cf;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #e7eafa;
+}
+
+/* Container de perguntas */
+.question-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.question-container.active {
+    display: block;
+}
+
+/* Estilo para as perguntas */
+.question {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #eaf2fa;
+    animation: fadeIn 1s ease-out; /* Animação de fade-in para as perguntas */
+}
+
+/* Estilo das respostas */
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    background-color: #7abecf;
+    margin: 10px 0;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.answers li:hover {
+    background-color: #edeafa;
+    transform: scale(1.05); /* Efeito de zoom nas opções de resposta */
+}
+
+/* Resultados finais */
+.result {
+    display: none;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: 600;
+    color: #d6bceb;
+    margin-top: 10px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

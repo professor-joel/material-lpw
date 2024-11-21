@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Criativo</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <img src="imagem.webp" alt="Logo do Quiz" class="logo">
+        <h1>Bem-vindo ao Quiz da Paola e Juju!</h1>
+        <p>Desafie sua mente e se divirta!</p>
+        <button class="button" onclick="startQuiz()">Iniciar Quiz</button>
+
+        <div class="question-container" id="question-container">
+            <div id="question" class="question"></div>
+            <ul id="answers" class="answers"></ul>
+            <button class="button" onclick="nextQuestion()">Próxima pergunta</button>
+        </div>
+
+        <div class="result" id="result">
+            <h2>Fim do Quiz!</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
